@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 0, 29);
+    height: 750px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+    padding: 0px 40px 0px 40px ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid rgb(0, 255, 255) ;
+    box-shadow: 0px 0px 50px 0px  rgb(0, 255, 255);
+}
+.navbar .my-name{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.navbar .my-name span{
+    color: rgb(0, 255, 255);
+ 
+}
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    
+}
+.navbar .links a{
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+.navbar .links a:hover{
+    color: aqua;
+    font-size: 28px;
+    border-bottom: 2px solid rgb(0, 255, 255) ;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.contact i{
+    font-size: 65px;
+    color: aqua;
+}
+.number{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+span{
+    color: aqua;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .main{
+
+        display: flex;
+        margin-top: 75px;
+        flex-wrap: wrap;
+    }
+    .contact{
+    margin-top: 50px;
+    }
+    .contact *{
+        font-size: 24px;
+    }.contact i{
+        font-size: 32px;
+        
+    }
+    .contact span{
+        display: none;
+    }
+}

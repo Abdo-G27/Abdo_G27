@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 0, 29);
+    height: 750px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+    padding: 0px 40px 0px 40px ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid rgb(0, 255, 255) ;
+    box-shadow: 0px 0px 50px 0px  rgb(0, 255, 255);
+}
+.navbar .my-name{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.navbar .my-name span{
+    color: rgb(0, 255, 255);
+    
+    
+}
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    
+}
+.navbar .links a{
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+.navbar .links a:hover{
+    color: aqua;
+    font-size: 28px;
+    border-bottom: 2px solid rgb(0, 255, 255) ;
+}
+
+/* cards */
+.cards{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+    
+
+}
+.cards *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    width: 225px;
+    box-shadow: 0px 0px 10px 0px  rgb(0, 255, 255);
+    border: 2px solid rgb(0, 255, 255) ;
+    padding-top: 25px;
+}
+.cards .card h4{
+    color: rgba(0, 255, 255, 0.7);
+}
+.cards .card img{
+    width: 200px;
+    height: 300px;
+    
+    border: 2px solid rgba(0, 255, 255, 0.5) ;
+}
+.card a :hover{
+    border: 2px solid rgb(0, 255, 255) ;
+    box-shadow: 0px 0px 10px 0px  rgb(0, 255, 255);
+}
+
+/* responsive */
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .main{
+
+        display: flex;
+        margin-top: 75px;
+        flex-wrap: wrap;
+    }
+    .cards{
+        margin-top: 50px;
+    }
+}

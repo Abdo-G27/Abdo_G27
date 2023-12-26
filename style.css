@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 0, 29);
+    height: 750px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+    padding: 0px 40px 0px 40px ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid rgb(0, 255, 255) ;
+    box-shadow: 0px 0px 50px 0px  rgb(0, 255, 255);
+}
+.navbar .my-name{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.navbar .my-name span{
+    color: rgb(0, 255, 255);
+ 
+}
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    
+}
+.navbar .links a{
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+.navbar .links a:hover{
+    color: aqua;
+    font-size: 28px;
+    border-bottom: 2px solid rgb(0, 255, 255) ;
+}
+
+/* main */
+.main .about-me h3{
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    
+}
+.main .about-me span{
+    color: aqua;
+}
+.main .my-img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 255, 255) ;
+}
+.main .my-img  :hover{
+    box-shadow: 0px 0px 25px 0px  rgb(0, 255, 255);
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .main{
+
+        display: flex;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .main .my-img img{
+        width: 275px;
+        height: 275px;
+    }
+    .main .about-me h3{
+        font-size: 21px;
+    }
+}
